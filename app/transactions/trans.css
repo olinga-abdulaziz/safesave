@@ -1,0 +1,86 @@
+
+@media only screen and (min-width:660px) {
+    .transBody{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top-view-trans{
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width:660px) {
+    .top-view-trans{
+        margin-top: 30px;
+        padding: 10px;
+    }
+}
+
+.trans-body-cont{
+    width: 100%;
+}
+.trans-table thead{
+    background-color: darkslategray;
+    color: white;
+    padding: 10px;
+    
+}
+.trans-table{
+    width: 100%;
+}
+.trans-table thead tr th small{
+    color: white;
+    text-align: start;
+    padding: 6px;
+}
+.trans-table tr:hover{
+    background-color: rgb(145, 173, 173);
+    color: white;
+}
+.trans-table tr{
+    border: 1px solid gray;
+    width: 100%;
+    cursor: pointer;
+}
+
+.trans-table tr td{
+    padding: 5px;
+}
+.trans-table tbody{
+    width: 100%;
+    background-color: white;
+}
+.top-tr{
+    display: flex;
+    justify-content: right;
+}
+.tptr-card{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.top-tr div strong{
+    color: green;
+}
+
+.target{
+    background-color: aliceblue;
+}
+/* add transactions css */
+
+.memt-top{
+    padding: 10px;
+    background-color: orange;
+}
+
+.addt-form{
+    margin-top: 20px;
+}
+.forminput{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid darkslategray;
+}
+.memtransacts{
+    padding: 10px;
+}

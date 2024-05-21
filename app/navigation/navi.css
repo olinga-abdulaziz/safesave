@@ -1,0 +1,101 @@
+.sideContainer{
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    transition: 0.2s all ease;
+    bottom: 0;
+}
+
+.topBar{
+    background-color: white;
+}
+.hideSide{
+    overflow: hidden;
+    width: 0%;
+    transition: 0.2s all ease;
+    position: absolute;
+}
+.btnCancel{
+    font-size: 40px;
+}
+.top-sideBAr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.sideContent{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.sideItem{
+    display: flex;
+    padding: 20px;
+    margin-left: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: auto;
+    width: 90%;
+    background-color: whitesmoke;
+    font-size: 17px;
+    border-radius: 4px;
+    align-items: center;
+}
+.btnMenu{
+    border: none;
+    cursor: pointer;
+}
+.logoMap{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 30px;
+    align-items: center;
+}
+.btnAlltrans{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+}
+.btnAlltrans:hover{
+    background-color: darkslategray;
+    color: white;
+    border-radius: 4px;
+}
+
+@media only screen and (min-width:660px) {
+    .sideContainer{
+        width: 30%;
+    }
+    .btnsideitem{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: unset;
+        border: none;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width:660px) {
+    .btnsideitem{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: unset;
+        border: none;
+        cursor: pointer;
+    }
+    .btnMenu{
+        background-color: whitesmoke;
+    }
+    .canbtnDiv{
+        border: none;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: darkslategray;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: darkslategray;
+  background-color: whitesmoke;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+@media only screen and (max-width:600px){
+  .topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   }
+   .tuconnnectTXT{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   .menu{
+    font-size: 40px;
+    font-weight: bold;
+   }
+   .contentLogo{
+    font-size: 60px;
+   }
+   .btnMenu{
+    padding: 10px;
+    border-radius: 7px;
+   }
+   .btnMenu:hover{
+    background-color: white;
+   }
+   .btnMenu{
+    padding: 10px;
+    background-color: white;
+    border-radius: 7px;
+   }
+.dashcontainer{
+  padding: 10px;
+}
+   .top-view{
+    padding: 10px;
+   }
+   .dashcard{
+    width: 150px;
+    padding: 10px;
+    margin: 4px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+   }
+   .dc1{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+   }
+   .dc2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+.dc3{
+  
+}
+ 
+ 
+}
+@media only screen and (min-width:600px){
+ .topBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+ }
+ .top-view{
+  height: 60px;
+ }
+ .contentLogo{
+  font-size: 60px;
+ }
+ .tuconnnectTXT{
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .menu{
+  font-size: 40px;
+  font-weight: bold;
+ }
+ .btnMenu{
+  padding: 10px;
+  border-radius: 7px;
+ }
+ .btnMenu:hover{
+  background-color: white;
+ }
+ .top-view{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+ }
+.dashcard{
+  background-color: white;
+  width: 10rem;
+  height: 4rem;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.card-packs{
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: auto;
+  background-color: rgb(206, 203, 203);
+  justify-content: space-around;
+}
+
+}
