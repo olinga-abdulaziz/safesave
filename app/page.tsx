@@ -1,5 +1,5 @@
 
-import { Menu, ConnectWithoutContactOutlined, ArrowRight } from "@mui/icons-material";
+import { Menu, ConnectWithoutContactOutlined, ArrowRight, Person } from "@mui/icons-material";
 import Link from "next/link";
 import Navbar from './navigation/Navbar'
 import './transactions/trans.css'
@@ -54,6 +54,9 @@ export default function Home() {
           <div className="top-view">
                 <strong>Top Transactions</strong>
             </div>
+            <div className="showADiv">
+              <button className="btnAlltrans">All transactions <ArrowRight /></button>
+            </div>
             <div className="trans-body-cont">
                
                 <table className='trans-table'>
@@ -88,9 +91,42 @@ export default function Home() {
                  </tbody>
                 </table>
             </div>
-            <center>
-              <button className="btnAlltrans">All transactions <ArrowRight /></button>
-            </center>
+            <div className="top-view">
+                <strong>Board Members</strong>
+            </div>
+            <div className="showADiv">
+              <button className="btnAlltrans">All Members <ArrowRight /></button>
+            </div>
+            <div className="boardMembers">
+              <div className="bMCard">
+                <div><strong>Chairman</strong></div>
+                <div><small>Yunus Emoru</small></div>
+                <div><small>0769210601</small></div>
+              </div>
+              <div>
+                <Person className="personIcon"/>
+              </div>
+            </div>
+            <div className="boardMembers">
+              <div className="bMCard">
+                <div><strong>Secretary</strong></div>
+                <div><small>Imodoi Mumin</small></div>
+                <div><small>0769210601</small></div>
+              </div>
+              <div>
+                <Person className="personIcon"/>
+              </div>
+            </div>
+            <div className="boardMembers">
+              <div className="bMCard">
+                <div><strong>Treasure</strong></div>
+                <div><small>Opaka Idd</small></div>
+                <div><small>0769210601</small></div>
+              </div>
+              <div>
+                <Person className="personIcon"/>
+              </div>
+            </div>
           
         </div>
       </div>

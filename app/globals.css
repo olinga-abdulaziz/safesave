@@ -35,8 +35,37 @@ body {
   }
 }
 
+.showADiv{
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+.btnAlltrans{
+  padding: 30px;
+  width: auto !important;
+}
 
+.mem-top{
+  align-items: center;
+}
 @media only screen and (max-width:600px){
+  .bMCard{
+    width: auto;
+    padding: 10px;
+  }
+  .boardMembers{
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: white;
+  }
+  .personIcon{
+    font-size: 50px;
+  }
   .topBar{
     display: flex;
     justify-content: space-between;
@@ -93,14 +122,35 @@ body {
     justify-content: space-between;
     align-items: center;
    }
-.dc3{
-  
-}
+
  
  
 }
 @media only screen and (min-width:600px){
- .topBar{
+  .bMCard{
+    width: auto;
+    padding: 10px;
+  }
+  
+.showADiv{
+ padding-right: 70px;
+}
+  .boardMembers{
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: white;
+  }
+  .personIcon{
+    font-size: 50px;
+  }
+  .topBar{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,6 +158,7 @@ body {
  }
  .top-view{
   height: 60px;
+  margin-top: 20px;
  }
  .contentLogo{
   font-size: 60px;

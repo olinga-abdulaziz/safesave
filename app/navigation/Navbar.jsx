@@ -53,9 +53,11 @@ export default function Navbar(){
                     <button className='btnsideitem'><MonetizationOn /> <strong>Transactions</strong></button>
                 </div>
                 </Link>
+                <Link href="/admin/dashboard">
                 <div className='sideItem'>
                     <button className='btnsideitem'><AdminPanelSettings /> <strong>Admin</strong></button>
                 </div>
+                </Link>
                 <div className='sideItem'>
                       <button className='btnsideitem'><LogoutOutlined /> <strong>Logout</strong></button>
                 </div>

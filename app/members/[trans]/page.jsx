@@ -1,6 +1,6 @@
 
-
-import { Person2Rounded, PhoneAndroidRounded } from '@mui/icons-material'
+import Link from 'next/link'
+import { AddCard, Person2Rounded, PhoneAndroidRounded, PlusOneOutlined, Save } from '@mui/icons-material'
 import Navbar from '../../navigation/Navbar'
 import '../memb.css'
 export default function AddTransaction(){
@@ -21,9 +21,9 @@ export default function AddTransaction(){
                 <div className="addt-form">
                     <div><small><strong>Add new transaction</strong></small></div>
                     <div>
-                       <form>
+                       <form className='formAddTrans'>
                             <input type="text" className='forminput' placeholder='Amount'/>
-                            <button>Add</button>
+                            <button className='btnAddT'><Save /></button>
                        </form>
                     </div>
                 </div>
@@ -35,24 +35,19 @@ export default function AddTransaction(){
             </div>
             <div className="trans-body-cont">
                 <div className="top-tr">
-                    <div>
+                    <div className='totalBox'>
                         <strong>Tatal : KES 25300</strong>
                     </div>
                 </div>
                 <table className='trans-table'>
                  <thead>
                     <tr>
-                        <th>DATE</th>
-                        <th>NAME</th>
-                        <th>AMOUNT</th>
+                        <th ><small className='ttTableh'>DATE</small></th>
+                        <th ><small className='ttTableh'>NAME</small></th>
+                        <th ><small className='ttTableh'>AMOUNT</small></th>
                     </tr>
                  </thead>
                  <tbody>
-                    <tr>
-                        <td>18/05/2024</td>
-                        <td>Yunus Emoru</td>
-                        <td>1000</td>
-                    </tr>
                     <tr>
                         <td>18/05/2024</td>
                         <td>Mumin imodoi</td>
