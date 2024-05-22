@@ -1,6 +1,6 @@
 
 import Navbar from '../../navigation/Navbar'
-import '../memb.css'
+import '../../members/memb.css'
 export default function AddMEMber(){
     return(
         <div>

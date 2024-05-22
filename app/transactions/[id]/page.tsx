@@ -2,6 +2,7 @@
 
 import './trns.css'
 import Navbar from '@/app/navigation/Navbar'
+import Footer from '../../navigation/Footer'
 export default function TransId(){
     return(
         <div>
@@ -35,6 +36,7 @@ export default function TransId(){
                     <button>DELET</button>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

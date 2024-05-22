@@ -3,6 +3,8 @@ import { Menu, ConnectWithoutContactOutlined, ArrowRight, Person } from "@mui/ic
 import Link from "next/link";
 import Navbar from './navigation/Navbar'
 import './transactions/trans.css'
+import Footer from './navigation/Footer'
+
 
 export default function Home() {
 
@@ -130,6 +132,7 @@ export default function Home() {
           
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

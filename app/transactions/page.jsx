@@ -1,7 +1,7 @@
 
 import './trans.css'
 import Navbar from '../navigation/Navbar'
-
+import Footer from '../navigation/Footer'
 export default function Transaction(){
     return (
         <div>
@@ -107,6 +107,7 @@ export default function Transaction(){
                 </table>
             </div>
            </div>
+           <Footer />
         </div>
     )
 }

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ArrowRightAltOutlined, ArrowRightRounded, Person2Outlined, PersonAdd } from '@mui/icons-material'
 import Navbar from '../navigation/Navbar'
 import './memb.css'
+import Footer from '../navigation/Footer'
 export default function Members(){
     return(
         <div>
@@ -53,6 +54,7 @@ export default function Members(){
                     <div><ArrowRightRounded className='arowright'/></div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

@@ -1,9 +1,13 @@
-
+"use client"
+import { useState } from 'react'
 import Link from 'next/link'
 import { AddCard, Person2Rounded, PhoneAndroidRounded, PlusOneOutlined, Save } from '@mui/icons-material'
 import Navbar from '../../navigation/Navbar'
 import '../memb.css'
+import Footer from '../../navigation/Footer'
+import AddTransactionBox from '../../components/AddTransaction'
 export default function AddTransaction(){
+    const [isAdmin,setisAdmin]=useState(true)
     return(
         <div>
             <Navbar />
@@ -18,15 +22,10 @@ export default function AddTransaction(){
                         <strong>+254769210601</strong>
                     </div>
                 </div>
-                <div className="addt-form">
-                    <div><small><strong>Add new transaction</strong></small></div>
-                    <div>
-                       <form className='formAddTrans'>
-                            <input type="text" className='forminput' placeholder='Amount'/>
-                            <button className='btnAddT'><Save /></button>
-                       </form>
-                    </div>
-                </div>
+
+               <AddTransactionBox />
+
+
             </div>
             <div className="memtransacts">
             
@@ -122,6 +121,7 @@ export default function AddTransaction(){
                 </table>
             </div>
             </div>
+            <Footer />
         </div>
     )
 }

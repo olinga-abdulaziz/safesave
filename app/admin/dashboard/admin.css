@@ -1,0 +1,40 @@
+
+.tab-container{
+    display: flex;
+}
+.tab-container ul li{
+    list-style: none;
+    margin: 10px;
+}
+.tab-container ul{
+    display: flex;
+}
+.adin-navbar{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    padding: 20px;
+}
+.tab-main-container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabtop{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.tabtop button{
+    padding: 5px;
+}
+@media only screen and (max-width:660px) {
+    .adin-navbar{
+        display: block;
+    }
+}
+
+@media only screen and (min-width:660px) {
+    
+}
